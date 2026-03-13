@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Map with Frames</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        h1 {
+            color: darkblue;
+        }
+        iframe {
+            border: 2px solid darkblue;
+            margin: 10px;
+        }
+        img {
+            border: 3px solid #333;
+            margin: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: darkred;
+            font-weight: bold;
+        }
+        a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color: lightyellow; padding: 10px;">Chennai Map with Hotspots</h1>
+
+    <img src="data:image/png;base64,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" 
+         alt="Chennai Map" usemap="#chennaiMap" width="300" height="300">
+
+    <map name="chennaiMap">
+        <area shape="rect" coords="120,150,180,200" href="https://en.wikipedia.org/wiki/Marina_Beach" target="frame1" alt="Marina Beach">
+        <area shape="circle" coords="250,250,40" href="https://en.wikipedia.org/wiki/Fort_St._George" target="frame1" alt="Fort St. George">
+        <area shape="poly" coords="300,100,350,120,340,160,290,140" href="https://en.wikipedia.org/wiki/Guindy_National_Park" target="frame1" alt="Guindy Park">
+    </map>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.7129100764362!2d80.00217935652746!3d13.008533396814329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528c9ebac84723%3A0x18e2bf88dfefa3ed!2sRajalakshmi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1770087998419!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p style="color: darkgreen; font-size: 18px;">
+        Explore Chennai: 
+        <a href="https://en.wikipedia.org/wiki/Chennai" target="_blank">Learn More</a>
+    </p>
+</body>
+</html>
